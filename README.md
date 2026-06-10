@@ -115,7 +115,7 @@ Liste os principais contribuidores.
 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
-| Cauã Homero Gonçalves Rodrigues  | <div align="center"><img src="https://avatars.githubusercontent.com/u/165859237?v=4" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/cauahomero"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/cauahomero"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:homeroni@yahoo.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Cauã Homero Gonçalves Rodrigues  | <div align="center"><img src="https://avatars.githubusercontent.com/u/165859237?v=4" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/cauahomero"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="nkedin.com/in/caua-homero/"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:homeroni@yahoo.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
 
 ---
 

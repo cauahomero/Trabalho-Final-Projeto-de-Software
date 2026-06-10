@@ -82,15 +82,23 @@ O sistema **Zé Turbinado** oferece as seguintes funcionalidades essenciais para
 
 A arquitetura do sistema **Zé Turbinado** é projetada para garantir eficiência operacional, escalabilidade e manutenibilidade.
 
-**Visão Geral:** O sistema é concebido para ser modular, separando as responsabilidades em diferentes componentes lógicos. Isso permite que cada parte do sistema seja desenvolvida e mantida de forma independente, facilitando futuras expansões e integrações.
+### Visão Geral
+O sistema é concebido para ser modular, separando as responsabilidades em diferentes componentes lógicos. Isso permite que cada parte do sistema seja desenvolvida e mantida de forma independente, facilitando futuras expansões e integrações.
 
-**Principais Elementos Arquiteturais:**
-
+### Principais Elementos Arquiteturais
 *   **Arquitetura de Módulos Lógicos:** Os módulos de atendimento, gerenciamento de ordens de serviço, estoque, compras, notificações e faturamento são os pilares do sistema, cada um com responsabilidades bem definidas.
 *   **Integração com Sistemas Externos:** Pontos de integração são previstos para comunicação com a API de fabricantes para solicitações de peças e com parceiros de descarte para logística reversa, garantindo um fluxo de trabalho completo.
 *   **Camadas de Persistência:** Um modelo de dados relacional robusto é a base para o armazenamento de todas as informações críticas do sistema, garantindo integridade e consistência.
 
-**Decisões Arquiteturais:** A escolha por uma arquitetura modular visa otimizar o fluxo de informações, reduzir a complexidade e permitir que diferentes equipes (ou desenvolvedores) trabalhem em partes distintas do sistema simultaneamente. A ênfase na integração externa reflete a necessidade de um ecossistema conectado para uma gestão moderna de oficina.
+### Decisões Arquiteturais
+A escolha por uma arquitetura modular visa otimizar o fluxo de informações, reduzir a complexidade e permitir que diferentes equipes (ou desenvolvedores) trabalhem em partes distintas do sistema simultaneamente. A ênfase na integração externa reflete a necessidade de um ecossistema conectado para uma gestão moderna de oficina.
+
+Para atender aos requisitos de desempenho e integração, foram tomadas as seguintes decisões arquiteturais:
+
+*   **APIs Orientadas a Serviços (RESTful):** A comunicação entre os módulos internos do sistema e com as interfaces externas (como o frontend e sistemas de fabricantes) será realizada através de APIs RESTful. Esta escolha facilita a interoperabilidade, padroniza as trocas de dados via JSON e promove um desacoplamento entre os consumidores e provedores de serviços.
+*   **Banco de Dados Relacional:** Para a persistência dos dados transacionais críticos (clientes, veículos, ordens de serviço, estoque), optou-se por um banco de dados relacional robusto (ex: PostgreSQL). Isso garante a integridade referencial, consistência ACID e facilita consultas complexas necessárias para relatórios e gestão financeira.
+*   **Serviço de Mensageria Assíncrona:** Para operações que não exigem resposta imediata e para o envio de notificações (e.g., envio de solicitações de peças a fabricantes, notificações de status ao cliente), será utilizado um sistema de mensageria (ex: Kafka ou RabbitMQ). Isso assegura que o sistema permaneça responsivo e resiliente a falhas temporárias em serviços externos.
+*   **Frontend Desacoplado:** A interface do usuário será desenvolvida como uma Single Page Application (SPA), consumindo as APIs RESTful do backend. Essa abordagem permite uma experiência de usuário mais fluida e a independência no desenvolvimento e deploy das camadas de apresentação e lógica de negócio.
 
 ---
 
@@ -103,7 +111,7 @@ Este projeto é resultado da aplicação de conceitos aprendidos e referências 
 ---
 
 ## 👥 Autores
-Liste os principais contribuidores. Você pode usar links para seus perfis.
+Liste os principais contribuidores.
 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
